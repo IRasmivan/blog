@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/IRasmivan/blog/static/css/main.0d8fb096.chunk.css",
+    "main.js": "/IRasmivan/blog/static/js/main.6e0ab7be.chunk.js",
+    "main.js.map": "/IRasmivan/blog/static/js/main.6e0ab7be.chunk.js.map",
+    "runtime~main.js": "/IRasmivan/blog/static/js/runtime~main.803e341d.js",
+    "runtime~main.js.map": "/IRasmivan/blog/static/js/runtime~main.803e341d.js.map",
+    "static/js/2.ddad3195.chunk.js": "/IRasmivan/blog/static/js/2.ddad3195.chunk.js",
+    "static/js/2.ddad3195.chunk.js.map": "/IRasmivan/blog/static/js/2.ddad3195.chunk.js.map",
+    "index.html": "/IRasmivan/blog/index.html",
+    "precache-manifest.ad60caf5cb1597ff953cbe85f26c31fc.js": "/IRasmivan/blog/precache-manifest.ad60caf5cb1597ff953cbe85f26c31fc.js",
+    "service-worker.js": "/IRasmivan/blog/service-worker.js",
+    "static/css/main.0d8fb096.chunk.css.map": "/IRasmivan/blog/static/css/main.0d8fb096.chunk.css.map"
+  }
+}
