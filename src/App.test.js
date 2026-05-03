@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import { MemoryRouter } from 'react-router-dom';
 import App from './App';
 
+jest.mock('react-markdown', () => ({
+  __esModule: true,
+  default: ({ children }) => <>{children}</>,
+}));
+
 jest.mock('contentful', () => ({
   createClient: () => ({
     getEntries: () => new Promise(() => {}),
