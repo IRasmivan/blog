@@ -1,19 +1,11 @@
 import React from 'react'
-import Header from './Header';
+
 const PageHeader = (props) => (
-  <div>
-  <section className={`hero ${props.color}`}>
-    <div className="hero-body">
-      <div className="container">
-        <h1 className="title">
-          {props.title}
-        </h1>
-        <h2 className="subtitle">
-         <p> {props.children}</p>
-        </h2>
-      </div>
-    </div>
+  <section className="page-hero">
+    <p className="page-hero__eyebrow">Recent Blog</p>
+    <h2 className="page-hero__title">{props.title}</h2>
+    <div className="page-hero__summary">{props.children}</div>
   </section>
-  </div>
 )
+
 export default PageHeader

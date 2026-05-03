@@ -1,30 +1,34 @@
 import React from 'react'
-const Header = (props) => (
-    <nav class="navbar has-background-white-ter" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item is-primary" href=".">
-        <img src="https://img.icons8.com/metro/104/000000/google-code.png" />
+
+const Header = () => (
+  <aside className="site-sidebar">
+    <div className="site-sidebar__inner">
+      <a className="site-brand" href="/">
+        <span className="site-brand__eyebrow">Read</span>
+        <span className="site-brand__name">Rasmivan Blog</span>
       </a>
-      
-      <a class="navbar-item is-primary" href=".">
-      <u class="navbar-item">
-      Rasmi Blog
-      </u>
-     </a>
-      
-    </div>
-  
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary is-outlined" href="https://rasmivan.com">
-              <strong>My Profile</strong>
-            </a>
-          </div>
-        </div>
+
+      <div className="site-sidebar__intro">
+        <p className="site-sidebar__kicker">Journal</p>
+        <h1 className="site-sidebar__title">Notes on engineering, delivery, and systems that have to hold up.</h1>
+        <p className="site-sidebar__copy">
+          A personal archive of posts on React, Angular, Java, Docker, Kubernetes, and the work around them.
+        </p>
+      </div>
+
+      <nav className="site-sidebar__nav" aria-label="Secondary navigation">
+        <a href="/">Recent Posts</a>
+        <a href="https://rasmivan.com/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+        <a href="https://github.com/IRasmivan" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+
+      <div className="site-sidebar__footer">
+        <a className="site-sidebar__button" href="https://rasmivan.com/" target="_blank" rel="noopener noreferrer">
+          View Profile
+        </a>
       </div>
     </div>
-  </nav>
+  </aside>
 )
+
 export default Header

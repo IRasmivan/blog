@@ -3,6 +3,7 @@ import * as contentful from 'contentful';
 import PageHeader from './layout/PageHeader';
 import BlogItem from './blog/BlogItem';
 import PageContent from './layout/PageContent';
+
 class Blog extends React.Component {
   state = {
     posts: []
@@ -23,18 +24,20 @@ class Blog extends React.Component {
   }
   render() {
     return (
-      <div>
-        <PageHeader color="is-primary" title="Code Blog">
+      <div className="blog-page">
+        <PageHeader title="Code Blog">
             This blog is a mix of random posts on Angular, React, Java, Docker & K8s.
         </PageHeader>
-        <br/>
         <PageContent>
-          { this.state.posts.map(({fields}, i) =>
-            <BlogItem key={i} {...fields} />
-          )}
+          <div className="blog-list">
+            { this.state.posts.map(({fields}, i) =>
+              <BlogItem key={i} {...fields} />
+            )}
+          </div>
         </PageContent>
       </div>
     )
   }
 }
+
 export default Blog

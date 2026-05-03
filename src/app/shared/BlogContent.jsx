@@ -1,15 +1,20 @@
 import React from 'react'
 import * as Markdown from 'react-markdown'
-const BlogContent = (props) => (
-  <article className="media">
-    <div className="media-left">
-      <figure className="image is-64x64">
-        <img src={props.icon} alt="Image" />
-      </figure>
-    </div>
-    <div className="media-content">
-      <div className="content">
-        <h1>{props.title}</h1>
+
+const BlogContent = (props) => {
+  const HeadingTag = props.limit ? 'h2' : 'h1'
+
+  return (
+    <article className="blog-entry">
+      <div className="blog-entry__media">
+        <figure className="blog-entry__figure">
+          <img src={props.icon} alt={props.title} />
+        </figure>
+      </div>
+
+      <div className="blog-entry__body">
+        <HeadingTag className="blog-entry__title">{props.title}</HeadingTag>
+        <div className="blog-entry__content">
         <Markdown
           source={
             props.limit
@@ -17,9 +22,11 @@ const BlogContent = (props) => (
             : props.content
           }
         />
+        </div>
+        { props.children }
       </div>
-      { props.children }
-    </div>
-  </article>
-)
+    </article>
+  )
+}
+
 export default BlogContent

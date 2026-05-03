@@ -1,12 +1,14 @@
 import React from 'react'
 
 const Footer = () => (
-  <footer className="footer">
-      <div className="content has-text-centered">
-        <p>Built on <strong>React</strong> using style with <strong> bulma </strong>and blog content from <strong> contentful </strong> by <a href="https://rasmivan.com/">Rasmivan!</a>
-          <br /> Copyright {(new Date().getFullYear())}
-        </p>
-      </div>
+  <footer className="site-footer">
+    <p>
+      Built on React with Contentful content and reshaped into the same editorial language as the main portfolio.
+    </p>
+    <p>
+      <a href="https://rasmivan.com/" target="_blank" rel="noopener noreferrer">Rasmivan Ilangovan</a>
+      {' '}Copyright {(new Date().getFullYear())}
+    </p>
   </footer>
 )
 
