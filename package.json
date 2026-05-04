@@ -1,7 +1,7 @@
 {
   "name": "blog_site",
   "version": "0.1.0",
-  "homepage": "https://blog.rasmivan.com",
+  "homepage": "https://irasmivan.github.io/blog",
   "packageManager": "npm@10.8.2",
   "private": true,
   "dependencies": {
