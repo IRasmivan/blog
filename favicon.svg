@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title>Rasmivan Blog Icon</title>
+  <desc>Warm brown rounded square with a single R monogram for Rasmivan Blog.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bf6b35" />
+      <stop offset="100%" stop-color="#7a411d" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#bg)" />
+  <path d="M22 16h13.1c8 0 12.9 4.5 12.9 11.5 0 5.1-2.5 8.8-7 10.5L49 48h-9.5l-6.4-8.3h-2V48H22V16Zm12.1 17.2c3.9 0 6.1-1.8 6.1-4.9 0-3.2-2.2-4.9-6.1-4.9h-3v9.8h3Z" fill="#fff7ee" />
+  <path d="M31.1 37.4h6.3L45.8 48h-7.4l-7.3-9.4Z" fill="#f1d3b3" opacity="0.9" />
+</svg>
